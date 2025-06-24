@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "technical_manual.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 2227,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-21T03:03:16.198770",
+    "modified_date": "2025-06-21T03:03:16.198770",
+    "file_hash": "6d2eb8ee3bd2593b3a83303c40dec5d75e06cc76b803b655a843734e7710ba5f",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/technical_manual.txt",
+    "file_stem": "technical_manual"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "Software Installation and Configuration Guide Document Management System v3.2 Table of Contents: 1. System Requirements 2. Installation Procedures 3. Initial Configuration 4. User Account Setup 5. Security Configuration 6. Troubleshooting 1. System Requirements Minimum Hardware Requirements: - CPU: Intel Core i5 or AMD Ryzen 5 (2.5 GHz minimum) - RAM: 8 GB minimum, 16 GB recommended - Storage: 500 GB available disk space - Network: 1 Gbps Ethernet connection Software Requirements: - Operating System: Windows 10/11, macOS 10.15+, or Ubuntu 18.04+ - Database: PostgreSQL 12+ or MySQL 8.0+ - Web Server: Apache 2.4+ or Nginx 1.18+ - Runtime: Node.js 16+ and Python 3.8+ 2. Installation Procedures Step 1: Download the installation package from the official website Step 2: Verify the package integrity using the provided SHA-256 checksum Step 3: Extract the installation files to a temporary directory Step 4: Run the installation script with administrator privileges Command Line Installation: ```bash sudo ./install.sh --config=production --database=postgresql ``` 3. Initial Configuration After installation, configure the following settings: - Database connection parameters - SMTP server settings for email notifications - SSL certificate configuration - Backup and recovery settings Configuration File Location: /etc/docmanager/config.yml 4. User Account Setup Create administrative user account: Username: admin Password: [Generate secure password] Permissions: Full system access 5. Security Configuration Enable the following security features: - Multi-factor authentication (MFA) - Role-based access control (RBAC) - Audit logging - Data encryption at rest and in transit 6. Troubleshooting Common Issues: - Database connection failures: Check credentials and network connectivity - Performance issues: Monitor system resources and optimize database queries - Authentication problems: Verify LDAP/Active Directory configuration Support Contact: Technical Support: support@docmanager.com Phone: 1-800-DOC-HELP Documentation: https://docs.docmanager.com Version History: v3.2.0 - Added advanced search capabilities v3.1.5 - Bug fixes and security updates v3.1.0 - Initial release with workflow automation",
+    "character_count": 2215,
+    "word_count": 295,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "configuration",
+        "frequency": 8,
+        "relevance_score": 0.02711864406779661
+      },
+      {
+        "word": "installation",
+        "frequency": 6,
+        "relevance_score": 0.020338983050847456
+      },
+      {
+        "word": "system",
+        "frequency": 5,
+        "relevance_score": 0.01694915254237288
+      },
+      {
+        "word": "security",
+        "frequency": 4,
+        "relevance_score": 0.013559322033898305
+      },
+      {
+        "word": "step",
+        "frequency": 4,
+        "relevance_score": 0.013559322033898305
+      },
+      {
+        "word": "initial",
+        "frequency": 3,
+        "relevance_score": 0.010169491525423728
+      },
+      {
+        "word": "user",
+        "frequency": 3,
+        "relevance_score": 0.010169491525423728
+      },
+      {
+        "word": "connection",
+        "frequency": 3,
+        "relevance_score": 0.010169491525423728
+      },
+      {
+        "word": "database",
+        "frequency": 3,
+        "relevance_score": 0.010169491525423728
+      },
+      {
+        "word": "software",
+        "frequency": 2,
+        "relevance_score": 0.006779661016949152
+      }
+    ],
+    "entities": [],
+    "summary": "Software Installation and Configuration Guide Document Management System v3. 2 Table of Contents: 1.  System Requirements 2",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "software",
+      "installation",
+      "configuration",
+      "guide",
+      "document",
+      "management",
+      "system",
+      "v3.2",
+      "table",
+      "contents:"
+    ],
+    "readability_score": 11.621602691924238,
+    "text_statistics": {
+      "sentence_count": 34,
+      "word_count": 295,
+      "character_count": 2215,
+      "character_count_no_spaces": 1921,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 8.676470588235293,
+      "average_characters_per_word": 6.511864406779661
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.253350",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Technical Manual",
+    "description": "Software Installation and Configuration Guide Document Management System v3. 2 Table of Contents: 1.  System Requirements 2",
+    "category": "Technical/IT",
+    "primary_language": "en",
+    "quality_score": 70.0,
+    "complexity_level": "Very Complex",
+    "main_topics": [
+      "software",
+      "installation",
+      "configuration",
+      "guide",
+      "document"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "configuration",
+      "installation",
+      "system",
+      "security",
+      "step",
+      "initial",
+      "user",
+      "connection",
+      "database",
+      "software"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

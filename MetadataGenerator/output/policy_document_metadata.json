@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "policy_document.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 846,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-22T23:25:50.115994",
+    "modified_date": "2025-06-22T23:25:50.115994",
+    "file_hash": "f63d54be58728cfb6379d9f89a5ef496d5c723898f2880def6d3ce1cf8973c80",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/policy_document.txt",
+    "file_stem": "policy_document"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "Remote Work Policy - Version 2.1 Purpose: This policy establishes guidelines and procedures for employees working remotely to ensure productivity, security, and work-life balance. Scope: This policy applies to all full-time and part-time employees who are approved for remote work arrangements. Eligibility Criteria: - Minimum 6 months of employment - Satisfactory performance reviews - Role suitable for remote work - Reliable internet connection and appropriate workspace Security Requirements: - Use of company-approved VPN for all work-related activities - Regular software updates and security patches - Secure storage of confidential information - Compliance with data protection regulations Performance Expectations: Remote employees are expected to maintain the same level of productivity and communication as office-based employees.",
+    "character_count": 841,
+    "word_count": 114,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "remote",
+        "frequency": 4,
+        "relevance_score": 0.03508771929824561
+      },
+      {
+        "word": "work",
+        "frequency": 3,
+        "relevance_score": 0.02631578947368421
+      },
+      {
+        "word": "policy",
+        "frequency": 3,
+        "relevance_score": 0.02631578947368421
+      },
+      {
+        "word": "employees",
+        "frequency": 3,
+        "relevance_score": 0.02631578947368421
+      },
+      {
+        "word": "performance",
+        "frequency": 2,
+        "relevance_score": 0.017543859649122806
+      },
+      {
+        "word": "security",
+        "frequency": 2,
+        "relevance_score": 0.017543859649122806
+      },
+      {
+        "word": "version",
+        "frequency": 1,
+        "relevance_score": 0.008771929824561403
+      },
+      {
+        "word": "purpose:",
+        "frequency": 1,
+        "relevance_score": 0.008771929824561403
+      },
+      {
+        "word": "establishes",
+        "frequency": 1,
+        "relevance_score": 0.008771929824561403
+      },
+      {
+        "word": "guidelines",
+        "frequency": 1,
+        "relevance_score": 0.008771929824561403
+      }
+    ],
+    "entities": [],
+    "summary": "Remote Work Policy - Version 2. 1 Purpose: This policy establishes guidelines and procedures for employees working remotely to ensure productivity, security, and work-life balance.  Scope: This policy applies to all full-time and part-time employees who are approved for remote work arrangements",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "remote",
+      "work",
+      "policy",
+      "version",
+      "purpose:",
+      "establishes",
+      "guidelines",
+      "procedures",
+      "employees",
+      "working"
+    ],
+    "readability_score": 0,
+    "text_statistics": {
+      "sentence_count": 4,
+      "word_count": 114,
+      "character_count": 841,
+      "character_count_no_spaces": 728,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 28.5,
+      "average_characters_per_word": 6.385964912280702
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.248874",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Policy Document",
+    "description": "Remote Work Policy - Version 2. 1 Purpose: This policy establishes guidelines and procedures for employees working remotely to ensure productivity, security, and work-life balance.  Scope: This policy applies to all full-time and part-time employees who are approved for remote work arrangements",
+    "category": "General Document",
+    "primary_language": "en",
+    "quality_score": 70.0,
+    "complexity_level": "Very Complex",
+    "main_topics": [
+      "remote",
+      "work",
+      "policy",
+      "version",
+      "purpose:"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "remote",
+      "work",
+      "policy",
+      "employees",
+      "performance",
+      "security",
+      "version",
+      "purpose:",
+      "establishes",
+      "guidelines"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

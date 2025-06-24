@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "meeting_minutes.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 624,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-22T23:25:50.115707",
+    "modified_date": "2025-06-22T23:25:50.115707",
+    "file_hash": "ca0cade9d29576c18d1e98d0988bc7c1f49fe795ff51d41d38bcd601902d2c1b",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/meeting_minutes.txt",
+    "file_stem": "meeting_minutes"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "Project Alpha Team Meeting Minutes Date: March 15, 2024 Attendees: John Smith, Sarah Johnson, Mike Chen, Lisa Rodriguez Agenda Items Discussed: 1. Project Timeline Review - Current phase completion: 75% - Next milestone: April 1, 2024 - Risk assessment: Low to medium 2. Budget Status - Expenses to date: $45,000 - Remaining budget: $23,000 - Projected completion cost: $62,000 3. Action Items - John: Complete user interface mockups by March 22 - Sarah: Finalize database schema by March 20 - Mike: Set up testing environment by March 25 Next meeting scheduled for March 22, 2024 at 2:00 PM.",
+    "character_count": 592,
+    "word_count": 98,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "march",
+        "frequency": 5,
+        "relevance_score": 0.05102040816326531
+      },
+      {
+        "word": "2024",
+        "frequency": 3,
+        "relevance_score": 0.030612244897959183
+      },
+      {
+        "word": "project",
+        "frequency": 2,
+        "relevance_score": 0.02040816326530612
+      },
+      {
+        "word": "meeting",
+        "frequency": 2,
+        "relevance_score": 0.02040816326530612
+      },
+      {
+        "word": "date:",
+        "frequency": 2,
+        "relevance_score": 0.02040816326530612
+      },
+      {
+        "word": "items",
+        "frequency": 2,
+        "relevance_score": 0.02040816326530612
+      },
+      {
+        "word": "alpha",
+        "frequency": 1,
+        "relevance_score": 0.01020408163265306
+      },
+      {
+        "word": "team",
+        "frequency": 1,
+        "relevance_score": 0.01020408163265306
+      },
+      {
+        "word": "minutes",
+        "frequency": 1,
+        "relevance_score": 0.01020408163265306
+      },
+      {
+        "word": "attendees:",
+        "frequency": 1,
+        "relevance_score": 0.01020408163265306
+      }
+    ],
+    "entities": [],
+    "summary": "Project Alpha Team Meeting Minutes Date: March 15, 2024 Attendees: John Smith, Sarah Johnson, Mike Chen, Lisa Rodriguez Agenda Items Discussed: 1.  Project Timeline Review - Current phase completion: 75% - Next milestone: April 1, 2024 - Risk assessment: Low to medium 2.  Budget Status - Expenses to date: $45,000 - Remaining budget: $23,000 - Projected completion cost: $62,000 3",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "project",
+      "alpha",
+      "team",
+      "meeting",
+      "minutes",
+      "date:",
+      "march",
+      "2024",
+      "attendees:",
+      "john"
+    ],
+    "readability_score": 46.22875510204082,
+    "text_statistics": {
+      "sentence_count": 4,
+      "word_count": 98,
+      "character_count": 592,
+      "character_count_no_spaces": 495,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 24.5,
+      "average_characters_per_word": 5.051020408163265
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.260475",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Meeting Minutes",
+    "description": "Project Alpha Team Meeting Minutes Date: March 15, 2024 Attendees: John Smith, Sarah Johnson, Mike Chen, Lisa Rodriguez Agenda Items Discussed: 1.  Project Timeline Review - Current phase completion: 75% - Next milestone: April 1, 2024 - Risk assessment: Low to medium 2.  Budget Status - Expenses to date: $45,000 - Remaining budget: $23,000 - Projected completion cost: $62,000 3",
+    "category": "General Document",
+    "primary_language": "en",
+    "quality_score": 75.0,
+    "complexity_level": "Complex",
+    "main_topics": [
+      "project",
+      "alpha",
+      "team",
+      "meeting",
+      "minutes"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "march",
+      "2024",
+      "project",
+      "meeting",
+      "date:",
+      "items",
+      "alpha",
+      "team",
+      "minutes",
+      "attendees:"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

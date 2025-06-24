@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "business_report.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 1997,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-21T03:03:16.198475",
+    "modified_date": "2025-06-21T03:03:16.198475",
+    "file_hash": "5149b02e7a0c948c5b47d8506313dacf051c96014a6aae576eb92ca018f4a6cd",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/business_report.txt",
+    "file_stem": "business_report"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "Q3 2024 Financial Performance Report ABC Technology Solutions Inc. Executive Summary: This quarterly report presents the financial performance and operational highlights for ABC Technology Solutions Inc. for the third quarter of 2024. The company achieved record revenue growth of 24% year-over-year, driven by strong demand for cloud computing services and enterprise software solutions. Key Financial Metrics: - Revenue: $45.2 million (24% YoY growth) - Gross Profit: $28.8 million (63.7% gross margin) - Operating Income: $12.4 million - Net Income: $9.8 million - EBITDA: $15.2 million Business Highlights: 1. Cloud Services Division generated $28.5 million in revenue, representing 63% of total revenue 2. Successfully launched three new enterprise software products 3. Expanded client base by 18% with 45 new enterprise customers 4. Achieved 99.9% service uptime across all cloud infrastructure Market Analysis: The technology sector continues to show strong growth momentum, particularly in cloud computing and artificial intelligence services. Market demand for digital transformation solutions remains robust across all industry verticals. Operational Performance: - Employee headcount increased to 485 (15% growth) - Customer satisfaction score: 4.7/5.0 - Employee retention rate: 92% - Research and development investment: $6.8 million (15% of revenue) Risk Factors: - Increased competition in cloud services market - Potential economic downturn impacting enterprise spending - Cybersecurity threats and data protection requirements - Talent acquisition challenges in competitive job market Forward-Looking Statements: Management expects continued growth in Q4 2024, with projected revenue of $48-50 million. The company plans to invest heavily in artificial intelligence capabilities and expand international operations. Contact Information: ABC Technology Solutions Inc. 123 Innovation Drive, San Francisco, CA 94105 Phone: (555) 123-4567 Email: investor.relations@abctech.com",
+    "character_count": 1989,
+    "word_count": 268,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "million",
+        "frequency": 7,
+        "relevance_score": 0.026119402985074626
+      },
+      {
+        "word": "cloud",
+        "frequency": 5,
+        "relevance_score": 0.018656716417910446
+      },
+      {
+        "word": "technology",
+        "frequency": 4,
+        "relevance_score": 0.014925373134328358
+      },
+      {
+        "word": "solutions",
+        "frequency": 4,
+        "relevance_score": 0.014925373134328358
+      },
+      {
+        "word": "enterprise",
+        "frequency": 4,
+        "relevance_score": 0.014925373134328358
+      },
+      {
+        "word": "market",
+        "frequency": 4,
+        "relevance_score": 0.014925373134328358
+      },
+      {
+        "word": "financial",
+        "frequency": 3,
+        "relevance_score": 0.011194029850746268
+      },
+      {
+        "word": "inc.",
+        "frequency": 3,
+        "relevance_score": 0.011194029850746268
+      },
+      {
+        "word": "revenue",
+        "frequency": 3,
+        "relevance_score": 0.011194029850746268
+      },
+      {
+        "word": "growth",
+        "frequency": 3,
+        "relevance_score": 0.011194029850746268
+      }
+    ],
+    "entities": [],
+    "summary": "Q3 2024 Financial Performance Report ABC Technology Solutions Inc.  Executive Summary: This quarterly report presents the financial performance and operational highlights for ABC Technology Solutions Inc.  for the third quarter of 2024",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "2024",
+      "financial",
+      "performance",
+      "report",
+      "technology",
+      "solutions",
+      "inc.",
+      "executive",
+      "summary:",
+      "quarterly"
+    ],
+    "readability_score": 20.931080707573273,
+    "text_statistics": {
+      "sentence_count": 27,
+      "word_count": 268,
+      "character_count": 1989,
+      "character_count_no_spaces": 1722,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 9.925925925925926,
+      "average_characters_per_word": 6.425373134328358
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.239554",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Business Report",
+    "description": "Q3 2024 Financial Performance Report ABC Technology Solutions Inc.  Executive Summary: This quarterly report presents the financial performance and operational highlights for ABC Technology Solutions Inc.  for the third quarter of 2024",
+    "category": "General Document",
+    "primary_language": "en",
+    "quality_score": 70.0,
+    "complexity_level": "Very Complex",
+    "main_topics": [
+      "2024",
+      "financial",
+      "performance",
+      "report",
+      "technology"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "million",
+      "cloud",
+      "technology",
+      "solutions",
+      "enterprise",
+      "market",
+      "financial",
+      "inc.",
+      "revenue",
+      "growth"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

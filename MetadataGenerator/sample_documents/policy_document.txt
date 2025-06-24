@@ -1,0 +1,22 @@
+Remote Work Policy - Version 2.1
+
+Purpose:
+This policy establishes guidelines and procedures for employees working remotely to ensure productivity, security, and work-life balance.
+
+Scope:
+This policy applies to all full-time and part-time employees who are approved for remote work arrangements.
+
+Eligibility Criteria:
+- Minimum 6 months of employment
+- Satisfactory performance reviews
+- Role suitable for remote work
+- Reliable internet connection and appropriate workspace
+
+Security Requirements:
+- Use of company-approved VPN for all work-related activities
+- Regular software updates and security patches
+- Secure storage of confidential information
+- Compliance with data protection regulations
+
+Performance Expectations:
+Remote employees are expected to maintain the same level of productivity and communication as office-based employees.

@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "technical_report.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 871,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-22T23:25:50.114989",
+    "modified_date": "2025-06-22T23:25:50.114989",
+    "file_hash": "43c93c2043c28d889b425e8f5d2f3bff2f5fff385ce6131f0b90797e7b40b292",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/technical_report.txt",
+    "file_stem": "technical_report"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "System Performance Analysis Report Executive Summary: This report analyzes the performance metrics of our distributed computing system over the past quarter. The analysis reveals significant improvements in throughput and response times. Methodology: We collected performance data using automated monitoring tools and conducted load testing under various scenarios. The metrics include CPU utilization, memory usage, network latency, and transaction throughput. Key Findings: 1. Average response time decreased by 23% compared to the previous quarter 2. System throughput increased by 31% during peak hours 3. Memory utilization remained stable at 67% average 4. Network latency improved by 15% after infrastructure upgrades Recommendations: Based on our analysis, we recommend continued monitoring and potential scaling of the database tier to handle increased load.",
+    "character_count": 867,
+    "word_count": 119,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "system",
+        "frequency": 3,
+        "relevance_score": 0.025210084033613446
+      },
+      {
+        "word": "performance",
+        "frequency": 3,
+        "relevance_score": 0.025210084033613446
+      },
+      {
+        "word": "analysis",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "report",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "metrics",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "throughput",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "response",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "monitoring",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "memory",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      },
+      {
+        "word": "network",
+        "frequency": 2,
+        "relevance_score": 0.01680672268907563
+      }
+    ],
+    "entities": [],
+    "summary": "System Performance Analysis Report Executive Summary: This report analyzes the performance metrics of our distributed computing system over the past quarter.  The analysis reveals significant improvements in throughput and response times.  Methodology: We collected performance data using automated monitoring tools and conducted load testing under various scenarios",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "system",
+      "performance",
+      "analysis",
+      "report",
+      "executive",
+      "summary:",
+      "analyzes",
+      "metrics",
+      "distributed",
+      "computing"
+    ],
+    "readability_score": 12.759861344537853,
+    "text_statistics": {
+      "sentence_count": 9,
+      "word_count": 119,
+      "character_count": 867,
+      "character_count_no_spaces": 749,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 13.222222222222221,
+      "average_characters_per_word": 6.294117647058823
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.246007",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Technical Report",
+    "description": "System Performance Analysis Report Executive Summary: This report analyzes the performance metrics of our distributed computing system over the past quarter.  The analysis reveals significant improvements in throughput and response times.  Methodology: We collected performance data using automated monitoring tools and conducted load testing under various scenarios",
+    "category": "Academic/Research",
+    "primary_language": "en",
+    "quality_score": 70.0,
+    "complexity_level": "Very Complex",
+    "main_topics": [
+      "system",
+      "performance",
+      "analysis",
+      "report",
+      "executive"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "system",
+      "performance",
+      "analysis",
+      "report",
+      "metrics",
+      "throughput",
+      "response",
+      "monitoring",
+      "memory",
+      "network"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

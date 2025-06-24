@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "filename": "sample.txt",
+    "file_extension": ".txt",
+    "file_size_bytes": 855,
+    "file_size_mb": 0.0,
+    "created_date": "2025-06-21T02:57:12.535159",
+    "modified_date": "2025-06-21T02:51:01",
+    "file_hash": "f9daf7ef5ec2b98a63a4870545e09259beea0f2ae4999688c615ef74f0c24417",
+    "document_type": "Text Document",
+    "mime_type": "text/plain",
+    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/sample.txt",
+    "file_stem": "sample"
+  },
+  "extraction_info": {
+    "extraction_method": "direct_text_read",
+    "page_count": 1,
+    "text": "This is a sample text document for testing the metadata generation system. The document contains multiple paragraphs with various types of content to demonstrate the system's ability to extract meaningful information and generate comprehensive metadata. Key topics covered in this document include: - Text processing and analysis - Natural language processing techniques - Document classification methods - Metadata extraction procedures This sample document helps validate that the system can properly: 1. Extract text content from files 2. Identify important keywords and phrases 3. Classify the document type and category 4. Generate structured metadata output 5. Assess document quality and complexity The system should be able to process this content and generate useful metadata including keywords, entities, summary, and document statistics.",
+    "character_count": 848,
+    "word_count": 120,
+    "success": true
+  },
+  "content_analysis": {
+    "keywords": [
+      {
+        "word": "document",
+        "frequency": 8,
+        "relevance_score": 0.06666666666666667
+      },
+      {
+        "word": "metadata",
+        "frequency": 4,
+        "relevance_score": 0.03333333333333333
+      },
+      {
+        "word": "text",
+        "frequency": 3,
+        "relevance_score": 0.025
+      },
+      {
+        "word": "content",
+        "frequency": 3,
+        "relevance_score": 0.025
+      },
+      {
+        "word": "generate",
+        "frequency": 3,
+        "relevance_score": 0.025
+      },
+      {
+        "word": "sample",
+        "frequency": 2,
+        "relevance_score": 0.016666666666666666
+      },
+      {
+        "word": "extract",
+        "frequency": 2,
+        "relevance_score": 0.016666666666666666
+      },
+      {
+        "word": "processing",
+        "frequency": 2,
+        "relevance_score": 0.016666666666666666
+      },
+      {
+        "word": "system",
+        "frequency": 2,
+        "relevance_score": 0.016666666666666666
+      },
+      {
+        "word": "testing",
+        "frequency": 1,
+        "relevance_score": 0.008333333333333333
+      }
+    ],
+    "entities": [],
+    "summary": "This is a sample text document for testing the metadata generation system.  The document contains multiple paragraphs with various types of content to demonstrate the system's ability to extract meaningful information and generate comprehensive metadata.  Key topics covered in this document include: - Text processing and analysis - Natural language processing techniques - Document classification methods - Metadata extraction procedures This sample document helps validate that the system can properly: 1",
+    "language": "en",
+    "sentiment": "neutral",
+    "topics": [
+      "sample",
+      "text",
+      "document",
+      "testing",
+      "metadata",
+      "generation",
+      "system.",
+      "contains",
+      "multiple",
+      "paragraphs"
+    ],
+    "readability_score": 14.231666666666683,
+    "text_statistics": {
+      "sentence_count": 8,
+      "word_count": 120,
+      "character_count": 848,
+      "character_count_no_spaces": 729,
+      "paragraph_count": 1,
+      "average_words_per_sentence": 15.0,
+      "average_characters_per_word": 6.075
+    }
+  },
+  "processing_info": {
+    "timestamp": "2025-06-22T23:25:50.264354",
+    "version": "1.0.0",
+    "success": true,
+    "errors": []
+  },
+  "derived_metadata": {
+    "title": "Sample",
+    "description": "This is a sample text document for testing the metadata generation system.  The document contains multiple paragraphs with various types of content to demonstrate the system's ability to extract meaningful information and generate comprehensive metadata.  Key topics covered in this document include: - Text processing and analysis - Natural language processing techniques - Document classification methods - Metadata extraction procedures This sample document helps validate that the system can properly: 1",
+    "category": "Technical/IT",
+    "primary_language": "en",
+    "quality_score": 70.0,
+    "complexity_level": "Very Complex",
+    "main_topics": [
+      "sample",
+      "text",
+      "document",
+      "testing",
+      "metadata"
+    ],
+    "key_entities": [],
+    "top_keywords": [
+      "document",
+      "metadata",
+      "text",
+      "content",
+      "generate",
+      "sample",
+      "extract",
+      "processing",
+      "system",
+      "testing"
+    ],
+    "content_type": "Informational",
+    "estimated_reading_time": "1 minute"
+  }
+}

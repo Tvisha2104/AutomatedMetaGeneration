@@ -1,0 +1,20 @@
+This is a sample text document for testing the metadata generation system.
+
+The document contains multiple paragraphs with various types of content to demonstrate
+the system's ability to extract meaningful information and generate comprehensive metadata.
+
+Key topics covered in this document include:
+- Text processing and analysis
+- Natural language processing techniques  
+- Document classification methods
+- Metadata extraction procedures
+
+This sample document helps validate that the system can properly:
+1. Extract text content from files
+2. Identify important keywords and phrases
+3. Classify the document type and category
+4. Generate structured metadata output
+5. Assess document quality and complexity
+
+The system should be able to process this content and generate useful metadata
+including keywords, entities, summary, and document statistics.

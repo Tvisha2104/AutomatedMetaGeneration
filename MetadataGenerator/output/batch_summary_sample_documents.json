@@ -1,0 +1,88 @@
+{
+  "batch_info": {
+    "directory": "sample_documents",
+    "processed_files": 8,
+    "successful_files": 8,
+    "failed_files": 0,
+    "processing_stats": {
+      "total_files": 8,
+      "successful": 8,
+      "failed": 0,
+      "errors": []
+    }
+  },
+  "file_summaries": [
+    {
+      "filename": "business_report.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Business Report",
+      "category": "General Document",
+      "quality_score": 70.0,
+      "word_count": 268
+    },
+    {
+      "filename": "technical_report.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Technical Report",
+      "category": "Academic/Research",
+      "quality_score": 70.0,
+      "word_count": 119
+    },
+    {
+      "filename": "policy_document.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Policy Document",
+      "category": "General Document",
+      "quality_score": 70.0,
+      "word_count": 114
+    },
+    {
+      "filename": "technical_manual.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Technical Manual",
+      "category": "Technical/IT",
+      "quality_score": 70.0,
+      "word_count": 295
+    },
+    {
+      "filename": "ai_research_paper.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Ai Research Paper",
+      "category": "General Document",
+      "quality_score": 70.0,
+      "word_count": 374
+    },
+    {
+      "filename": "meeting_minutes.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Meeting Minutes",
+      "category": "General Document",
+      "quality_score": 75.0,
+      "word_count": 98
+    },
+    {
+      "filename": "ai_healthcare_analysis.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Ai Healthcare Analysis",
+      "category": "Academic/Research",
+      "quality_score": 70.0,
+      "word_count": 240
+    },
+    {
+      "filename": "sample.txt",
+      "file_size_mb": 0.0,
+      "success": true,
+      "title": "Sample",
+      "category": "Technical/IT",
+      "quality_score": 70.0,
+      "word_count": 120
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# This file ensures the output directory is created in git repositories
+# The metadata generation system will save JSON files to this directory
