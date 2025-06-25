@@ -1,3 +1,4 @@
+Still editing
 # AutomatedMetaGeneration
 
 A Python-based system for extracting text and generating comprehensive metadata from various document formats (PDF, DOCX, TXT) using text extraction, semantic analysis, and NLP techniques.
@@ -25,3 +26,5 @@ metadata_poc.ipynb: Proof-of-concept notebook.
 sample_documents/: Directory for sample files.
 output/: Directory for generated metadata JSON files.
 metadata_generation.log: Log file.
+
+
