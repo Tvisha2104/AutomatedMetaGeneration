@@ -7,7 +7,7 @@ from typing import Dict, List, Any, Optional, Tuple
 import re
 from collections import Counter
 
-# Import spaCy with error handling
+
 try:
     import spacy
     from spacy.lang.en.stop_words import STOP_WORDS
@@ -61,29 +61,26 @@ class SemanticAnalyzer:
         
         try:
             if self.nlp is not None:
-                # Process text with spaCy
+              
                 doc = self.nlp(text)
                 
-                # Extract keywords
+
                 analysis['keywords'] = self._extract_keywords(doc)
                 
-                # Extract named entities
+         
                 analysis['entities'] = self._extract_entities(doc)
                 
-                # Generate summary
+     
                 analysis['summary'] = self._generate_summary(text, doc)
-                
-                # Extract topics
+            
                 analysis['topics'] = self._extract_topics(doc)
-                
-                # Calculate readability
+ 
                 analysis['readability_score'] = self._calculate_readability(text)
                 
-                # Basic sentiment analysis (if available in model)
                 analysis['sentiment'] = self._analyze_sentiment(doc)
                 
             else:
-                # Fallback analysis without spaCy
+           
                 analysis = self._fallback_analysis(text)
                 
             self.logger.info("Semantic analysis completed successfully")
@@ -96,7 +93,7 @@ class SemanticAnalyzer:
     
     def _extract_keywords(self, doc) -> List[Dict[str, Any]]:
         """Extract keywords from spaCy document."""
-        # Get important tokens (exclude stop words, punctuation, spaces)
+       
         important_tokens = []
         
         for token in doc:
@@ -107,7 +104,6 @@ class SemanticAnalyzer:
                 token.pos_ in ['NOUN', 'ADJ', 'VERB', 'PROPN']):
                 important_tokens.append(token.lemma_.lower())
         
-        # Count frequency and get top keywords
         keyword_counts = Counter(important_tokens)
         keywords = []
         
@@ -126,7 +122,7 @@ class SemanticAnalyzer:
         seen_entities = set()
         
         for ent in doc.ents:
-            # Avoid duplicates
+           
             entity_key = (ent.text.lower(), ent.label_)
             if entity_key not in seen_entities:
                 seen_entities.add(entity_key)
@@ -139,7 +135,7 @@ class SemanticAnalyzer:
                     'confidence': getattr(ent, 'score', 1.0)
                 })
         
-        # Sort by confidence and return top entities
+       
         entities.sort(key=lambda x: x['confidence'], reverse=True)
         return entities[:MAX_ENTITIES]
     
@@ -150,10 +146,9 @@ class SemanticAnalyzer:
         if len(sentences) <= SUMMARY_SENTENCES:
             return ' '.join(sentences)
         
-        # Simple scoring based on sentence length and keyword presence
         sentence_scores = []
         
-        # Get keywords for scoring
+       
         keywords = set(token.lemma_.lower() for token in doc 
                       if not token.is_stop and not token.is_punct and len(token.text) > 2)
         
@@ -161,16 +156,16 @@ class SemanticAnalyzer:
             score = 0
             sent_words = sent.lower().split()
             
-            # Score based on keyword presence
+      
             for word in sent_words:
                 if word in keywords:
                     score += 1
             
-            # Normalize by sentence length
+       
             score = score / len(sent_words) if sent_words else 0
             sentence_scores.append((sent, score))
         
-        # Sort by score and take top sentences
+   
         sentence_scores.sort(key=lambda x: x[1], reverse=True)
         top_sentences = [sent for sent, score in sentence_scores[:SUMMARY_SENTENCES]]
         
@@ -178,27 +173,25 @@ class SemanticAnalyzer:
     
     def _extract_topics(self, doc) -> List[str]:
         """Extract potential topics from the document."""
-        # Simple topic extraction based on noun phrases
+      
         topics = set()
         
         for chunk in doc.noun_chunks:
             if len(chunk.text.split()) <= 3 and not chunk.root.is_stop:
                 topics.add(chunk.text.strip())
         
-        # Also add important single nouns
+
         for token in doc:
             if (token.pos_ == 'NOUN' and 
                 not token.is_stop and 
                 len(token.text) > 3):
                 topics.add(token.text)
         
-        return list(topics)[:10]  # Return top 10 topics
+        return list(topics)[:10]  
     
     def _analyze_sentiment(self, doc) -> str:
         """Basic sentiment analysis."""
-        # This is a simplified sentiment analysis
-        # For production, consider using specialized sentiment models
-        
+     
         positive_words = ['good', 'great', 'excellent', 'amazing', 'wonderful', 'fantastic']
         negative_words = ['bad', 'terrible', 'awful', 'horrible', 'poor', 'disappointing']
         
@@ -215,7 +208,7 @@ class SemanticAnalyzer:
     
     def _calculate_readability(self, text: str) -> float:
         """Calculate a simple readability score."""
-        # Simplified Flesch Reading Ease approximation
+
         sentences = re.split(r'[.!?]+', text)
         words = text.split()
         syllables = sum(self._count_syllables(word) for word in words)
@@ -226,7 +219,7 @@ class SemanticAnalyzer:
         avg_sentence_length = len(words) / len(sentences)
         avg_syllables_per_word = syllables / len(words)
         
-        # Simplified readability score (0-100, higher is easier)
+
         score = 206.835 - (1.015 * avg_sentence_length) - (84.6 * avg_syllables_per_word)
         return max(0, min(100, score))
     
@@ -245,7 +238,7 @@ class SemanticAnalyzer:
             else:
                 prev_char_was_vowel = False
         
-        # Handle silent e
+   
         if word.endswith('e') and syllables > 1:
             syllables -= 1
         
@@ -271,14 +264,14 @@ class SemanticAnalyzer:
         """Fallback analysis when spaCy is not available."""
         words = text.lower().split()
         
-        # Simple keyword extraction
+
         word_counts = Counter(word for word in words 
                             if len(word) > 3 and word not in STOP_WORDS)
         
         keywords = [{'word': word, 'frequency': count, 'relevance_score': count/len(words)} 
                    for word, count in word_counts.most_common(MAX_KEYWORDS)]
         
-        # Simple summary (first few sentences)
+ 
         sentences = re.split(r'[.!?]+', text)
         summary = '. '.join(sentences[:SUMMARY_SENTENCES]).strip()
         
