@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Optional, Dict, Any
 import io
 
-# Import libraries with error handling
+
 try:
     import PyPDF2
     import pdfplumber
@@ -42,7 +42,7 @@ class TextExtractor:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         
-        # Configure tesseract if available
+       
         if OCR_AVAILABLE:
             try:
                 pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
@@ -83,7 +83,7 @@ class TextExtractor:
                 self.logger.error(result['error'])
                 return result
             
-            # Calculate text statistics
+        
             if result['text']:
                 result['character_count'] = len(result['text'])
                 result['word_count'] = len(result['text'].split())
@@ -102,7 +102,7 @@ class TextExtractor:
         """Extract text from TXT files."""
         result = {'extraction_method': 'direct_text_read', 'page_count': 1}
         
-        # Try different encodings
+       
         encodings = ['utf-8', 'utf-16', 'latin-1', 'cp1252']
         
         for encoding in encodings:
@@ -126,7 +126,7 @@ class TextExtractor:
         result = {'extraction_method': 'pdf_text_extraction'}
         text_content = []
         
-        # Try pdfplumber first (better text extraction)
+
         try:
             with pdfplumber.open(file_path) as pdf:
                 result['page_count'] = len(pdf.pages)
@@ -142,8 +142,7 @@ class TextExtractor:
                     return result
         except Exception as e:
             self.logger.warning(f"pdfplumber failed: {str(e)}, trying PyPDF2")
-        
-        # Fallback to PyPDF2
+
         try:
             with open(file_path, 'rb') as f:
                 pdf_reader = PyPDF2.PdfReader(f)
@@ -161,7 +160,6 @@ class TextExtractor:
         except Exception as e:
             self.logger.warning(f"PyPDF2 failed: {str(e)}")
         
-        # If no text extracted, try OCR if available
         if not text_content and OCR_AVAILABLE:
             self.logger.info("No text extracted from PDF, attempting OCR")
             result = self._extract_with_ocr(file_path)
@@ -181,12 +179,11 @@ class TextExtractor:
         doc = Document(file_path)
         text_content = []
         
-        # Extract text from paragraphs
+
         for paragraph in doc.paragraphs:
             if paragraph.text.strip():
                 text_content.append(paragraph.text)
-        
-        # Extract text from tables
+
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
@@ -204,14 +201,12 @@ class TextExtractor:
         result = {'extraction_method': 'ocr', 'page_count': 0}
         
         try:
-            # For PDF files, convert to images first
             if file_path.suffix.lower() == '.pdf':
-                # This is a simplified OCR approach
-                # In production, you might want to use pdf2image
+              
                 result['text'] = "OCR extraction requires pdf2image library for PDF files"
                 return result
             else:
-                # For image files
+           
                 image = Image.open(file_path)
                 text = pytesseract.image_to_string(
                     image, 
