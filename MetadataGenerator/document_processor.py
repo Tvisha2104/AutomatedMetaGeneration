@@ -41,24 +41,22 @@ class DocumentProcessor:
         self.logger.info(f"Processing document: {file_path}")
         
         try:
-            # Validate input file
+       
             if not validate_file(file_path, MAX_FILE_SIZE):
                 raise ValueError(f"File validation failed: {file_path}")
             
-            # Check if file format is supported
+           
             file_extension = file_path.suffix.lower()
             if file_extension not in SUPPORTED_FORMATS:
                 raise ValueError(f"Unsupported file format: {file_extension}")
-            
-            # Generate metadata
+   
             metadata = self.metadata_generator.generate_metadata(file_path)
             
-            # Determine output path
             if output_path is None:
                 output_filename = f"{file_path.stem}_metadata.json"
                 output_path = OUTPUT_DIR / output_filename
             
-            # Save metadata
+           
             if save_metadata(metadata, output_path):
                 self.logger.info(f"Metadata saved to: {output_path}")
                 self.processing_stats['successful'] += 1
@@ -75,7 +73,7 @@ class DocumentProcessor:
             self.processing_stats['failed'] += 1
             self.processing_stats['errors'].append(error_msg)
             
-            # Return error metadata
+           
             return {
                 'document_info': {'filename': file_path.name if file_path.exists() else str(file_path)},
                 'processing_info': {
@@ -102,7 +100,7 @@ class DocumentProcessor:
         if not directory_path.exists() or not directory_path.is_dir():
             raise ValueError(f"Invalid directory path: {directory_path}")
         
-        # Find all supported files
+    
         files_to_process = []
         
         if recursive:
@@ -113,8 +111,7 @@ class DocumentProcessor:
                 files_to_process.extend(directory_path.glob(f"*{ext}"))
         
         self.logger.info(f"Found {len(files_to_process)} files to process")
-        
-        # Process each file
+
         results = []
         for file_path in files_to_process:
             try:
@@ -124,7 +121,7 @@ class DocumentProcessor:
                 self.logger.error(f"Failed to process {file_path}: {str(e)}")
                 continue
         
-        # Save batch processing summary
+ 
         self._save_batch_summary(directory_path, results)
         
         return results
@@ -178,7 +175,7 @@ class DocumentProcessor:
             'file_summaries': []
         }
         
-        # Add summary for each file
+  
         for result in results:
             doc_info = result.get('document_info', {})
             processing_info = result.get('processing_info', {})
@@ -195,7 +192,7 @@ class DocumentProcessor:
             }
             summary['file_summaries'].append(file_summary)
         
-        # Save summary
+   
         summary_path = OUTPUT_DIR / f"batch_summary_{directory_path.name}.json"
         save_metadata(summary, summary_path)
         self.logger.info(f"Batch summary saved to: {summary_path}")
