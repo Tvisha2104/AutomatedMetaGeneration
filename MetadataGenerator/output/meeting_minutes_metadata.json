@@ -4,12 +4,12 @@
     "file_extension": ".txt",
     "file_size_bytes": 624,
     "file_size_mb": 0.0,
-    "created_date": "2025-06-22T23:25:50.115707",
-    "modified_date": "2025-06-22T23:25:50.115707",
+    "created_date": "2025-06-25T05:22:30.123539",
+    "modified_date": "2025-06-25T05:22:30.123539",
     "file_hash": "ca0cade9d29576c18d1e98d0988bc7c1f49fe795ff51d41d38bcd601902d2c1b",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/meeting_minutes.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/meeting_minutes.txt",
     "file_stem": "meeting_minutes"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.260475",
+    "timestamp": "2025-06-25T05:22:30.162885",
     "version": "1.0.0",
     "success": true,
     "errors": []

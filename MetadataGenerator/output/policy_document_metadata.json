@@ -4,12 +4,12 @@
     "file_extension": ".txt",
     "file_size_bytes": 846,
     "file_size_mb": 0.0,
-    "created_date": "2025-06-22T23:25:50.115994",
-    "modified_date": "2025-06-22T23:25:50.115994",
+    "created_date": "2025-06-25T05:22:30.123948",
+    "modified_date": "2025-06-25T05:22:30.123948",
     "file_hash": "f63d54be58728cfb6379d9f89a5ef496d5c723898f2880def6d3ce1cf8973c80",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/policy_document.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/policy_document.txt",
     "file_stem": "policy_document"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.248874",
+    "timestamp": "2025-06-25T05:22:30.158458",
     "version": "1.0.0",
     "success": true,
     "errors": []

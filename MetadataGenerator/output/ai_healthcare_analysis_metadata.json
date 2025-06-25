@@ -4,12 +4,12 @@
     "file_extension": ".txt",
     "file_size_bytes": 1995,
     "file_size_mb": 0.0,
-    "created_date": "2025-06-22T23:25:49.838337",
-    "modified_date": "2025-06-22T23:25:49.838337",
+    "created_date": "2025-06-25T05:19:58.810316",
+    "modified_date": "2025-06-25T05:19:58.810316",
     "file_hash": "bfe4cc8af1c587704ce98da7a94e69f1da7fd90be9a12f2d61323d828ffb7573",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/ai_healthcare_analysis.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/ai_healthcare_analysis.txt",
     "file_stem": "ai_healthcare_analysis"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.262265",
+    "timestamp": "2025-06-25T09:42:54.250567",
     "version": "1.0.0",
     "success": true,
     "errors": []

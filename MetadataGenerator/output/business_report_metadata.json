@@ -9,7 +9,7 @@
     "file_hash": "5149b02e7a0c948c5b47d8506313dacf051c96014a6aae576eb92ca018f4a6cd",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/business_report.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/business_report.txt",
     "file_stem": "business_report"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.239554",
+    "timestamp": "2025-06-25T05:22:30.152837",
     "version": "1.0.0",
     "success": true,
     "errors": []

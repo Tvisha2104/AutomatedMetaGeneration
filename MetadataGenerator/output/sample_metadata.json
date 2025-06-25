@@ -9,7 +9,7 @@
     "file_hash": "f9daf7ef5ec2b98a63a4870545e09259beea0f2ae4999688c615ef74f0c24417",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/sample.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/sample.txt",
     "file_stem": "sample"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.264354",
+    "timestamp": "2025-06-25T05:22:30.165123",
     "version": "1.0.0",
     "success": true,
     "errors": []

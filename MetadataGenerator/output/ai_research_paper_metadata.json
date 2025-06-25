@@ -9,7 +9,7 @@
     "file_hash": "29422e2950624ca4b44504fb97f506c9678d312054a07416836046c3507fc2d6",
     "document_type": "Text Document",
     "mime_type": "text/plain",
-    "file_path": "/Users/tvishadhuper/Downloads/MetadataGenerator/sample_documents/ai_research_paper.txt",
+    "file_path": "/Users/tvishadhuper/AutomatedMetaGeneration/MetadataGenerator/sample_documents/ai_research_paper.txt",
     "file_stem": "ai_research_paper"
   },
   "extraction_info": {
@@ -101,7 +101,7 @@
     }
   },
   "processing_info": {
-    "timestamp": "2025-06-22T23:25:50.256414",
+    "timestamp": "2025-06-25T05:22:30.161146",
     "version": "1.0.0",
     "success": true,
     "errors": []
