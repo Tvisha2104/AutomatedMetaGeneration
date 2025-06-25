@@ -90,10 +90,10 @@ def clean_text(text: str) -> str:
     if not text:
         return ""
     
-    # Remove excessive whitespace
+ 
     text = ' '.join(text.split())
     
-    # Remove non-printable characters
+   
     text = ''.join(char for char in text if char.isprintable() or char.isspace())
     
     return text.strip()
