@@ -35,7 +35,7 @@ class MetadataGenerator:
         """
         self.logger.info(f"Starting metadata generation for: {file_path}")
         
-        # Initialize metadata structure
+       
         metadata = {
             'document_info': {},
             'extraction_info': {},
@@ -49,17 +49,16 @@ class MetadataGenerator:
         }
         
         try:
-            # Validate file
+      
             if not validate_file(file_path):
                 error_msg = f"File validation failed for: {file_path}"
                 metadata['processing_info']['errors'].append(error_msg)
                 self.logger.error(error_msg)
                 return metadata
-            
-            # Get basic file information
+    
             metadata['document_info'] = self._generate_document_info(file_path)
             
-            # Extract text content
+         
             extraction_result = self.text_extractor.extract_text(file_path)
             metadata['extraction_info'] = extraction_result
             
@@ -69,12 +68,12 @@ class MetadataGenerator:
                 self.logger.error(error_msg)
                 return metadata
             
-            # Perform semantic analysis
+
             if extraction_result['text']:
                 semantic_analysis = self.semantic_analyzer.analyze_text(extraction_result['text'])
                 metadata['content_analysis'] = semantic_analysis
                 
-                # Generate derived metadata
+             
                 metadata['derived_metadata'] = self._generate_derived_metadata(
                     metadata['document_info'],
                     extraction_result,
@@ -99,11 +98,11 @@ class MetadataGenerator:
         """Generate basic document information."""
         file_info = get_file_info(file_path)
         
-        # Determine document type
+        
         file_extension = file_path.suffix.lower()
         document_type = SUPPORTED_FORMATS.get(file_extension, 'Unknown Document')
         
-        # Get MIME type
+        
         mime_type, _ = mimetypes.guess_type(str(file_path))
         
         document_info = {
@@ -121,19 +120,18 @@ class MetadataGenerator:
                                  content_analysis: Dict[str, Any]) -> Dict[str, Any]:
         """Generate derived metadata combining all analysis results."""
         
-        # Determine document title
+        
         title = self._extract_title(document_info, content_analysis)
         
-        # Classify document category
         category = self._classify_document(content_analysis)
         
-        # Generate description
+        
         description = self._generate_description(content_analysis)
         
-        # Extract primary language
+       
         language = content_analysis.get('language', 'en')
         
-        # Quality assessment
+       
         quality_score = self._assess_document_quality(extraction_info, content_analysis)
         
         derived_metadata = {
@@ -155,29 +153,29 @@ class MetadataGenerator:
     def _extract_title(self, document_info: Dict[str, Any], 
                       content_analysis: Dict[str, Any]) -> str:
         """Extract or generate document title."""
-        # First try the filename without extension
+       
         filename_title = document_info.get('file_stem', '')
         if filename_title and len(filename_title) > 3:
-            # Clean up filename
+            
             title = filename_title.replace('_', ' ').replace('-', ' ')
             title = ' '.join(word.capitalize() for word in title.split())
             return title
         
-        # Try to extract from summary
+      
         summary = content_analysis.get('summary', '')
         if summary:
-            # Take first sentence as title
+           
             first_sentence = summary.split('.')[0].strip()
             if len(first_sentence) < 100:
                 return first_sentence
         
-        # Try keywords
+    
         keywords = content_analysis.get('keywords', [])
         if keywords:
             top_keywords = [kw['word'].capitalize() for kw in keywords[:3]]
             return ' '.join(top_keywords)
         
-        # Fallback
+  
         return document_info.get('filename', 'Untitled Document')
     
     def _classify_document(self, content_analysis: Dict[str, Any]) -> str:
@@ -185,7 +183,7 @@ class MetadataGenerator:
         entities = content_analysis.get('entities', [])
         keywords = [kw['word'].lower() for kw in content_analysis.get('keywords', [])]
         
-        # Simple rule-based classification
+
         if any('ORG' in entity['label'] for entity in entities):
             return 'Business/Corporate'
         elif any('PERSON' in entity['label'] for entity in entities):
@@ -207,7 +205,7 @@ class MetadataGenerator:
         if summary and len(summary) > 20:
             return summary
         
-        # Fallback: create description from keywords and topics
+        
         keywords = [kw['word'] for kw in content_analysis.get('keywords', [])[:5]]
         topics = content_analysis.get('topics', [])[:3]
         
@@ -226,25 +224,24 @@ class MetadataGenerator:
         """Assess document quality on a scale of 0-100."""
         score = 100.0
         
-        # Penalize if text extraction failed
+      
         if not extraction_info.get('success', False):
             score -= 50
         
-        # Consider text length
         word_count = extraction_info.get('word_count', 0)
         if word_count < 50:
             score -= 30
         elif word_count < 100:
             score -= 15
         
-        # Consider readability
+    
         readability = content_analysis.get('readability_score', 0)
         if readability < 30:
             score -= 20
         elif readability > 80:
             score += 10
         
-        # Consider content richness
+    
         keywords_count = len(content_analysis.get('keywords', []))
         entities_count = len(content_analysis.get('entities', []))
         
@@ -275,7 +272,7 @@ class MetadataGenerator:
         entities = content_analysis.get('entities', [])
         keywords = [kw['word'].lower() for kw in content_analysis.get('keywords', [])]
         
-        # Check for specific content indicators
+       
         if any('DATE' in entity['label'] for entity in entities):
             if any(word in keywords for word in ['meeting', 'agenda', 'schedule']):
                 return 'Meeting/Event'
@@ -292,7 +289,7 @@ class MetadataGenerator:
     
     def _estimate_reading_time(self, word_count: int) -> str:
         """Estimate reading time based on word count."""
-        # Average reading speed: 200-250 words per minute
+       
         if word_count == 0:
             return "0 minutes"
         
